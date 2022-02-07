@@ -1,9 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
 using NoCqrs.Domain;
-using NodaMoney;
 
 namespace NoCqrs.Services
 {
@@ -35,8 +33,9 @@ namespace NoCqrs.Services
             var newCover = policy.Product.Covers.WithCode(request.NewCoverCode);
             policy.ExtendCoverage
             (
-                request.EffectiveDateOfChange, 
-                new CoverPrice(newCover,Money.Euro(request.NewCoverPrice),request.NewCoverPriceUnit)
+                request.EffectiveDateOfChange,
+                //new CoverPrice(newCover,Money.Euro(request.NewCoverPrice),request.NewCoverPriceUnit)
+                new CoverPrice(newCover,request.NewCoverPrice,request.NewCoverPriceUnit)
             );
             var newPolicyVersion = policy.Versions.Last();
             dataStore.CommitChanges();

@@ -1,7 +1,5 @@
 using System;
-using System.Linq;
 using NoCqrs.Domain;
-using NodaMoney;
 using Xunit;
 using static Xunit.Assert;
 
@@ -20,7 +18,7 @@ namespace NoCqrs.Tests
             Single(policy.Versions);
             Equal(PolicyStatus.Active, policy.Versions.WithNumber(1).PolicyStatus);
             Equal(PolicyVersionStatus.Active, policy.Versions.WithNumber(1).VersionStatus);
-            Equal(Money.Euro(500), policy.Versions.WithNumber(1).TotalPremium);
+            Equal(500, policy.Versions.WithNumber(1).TotalPremium);
         }
         
         [Fact]

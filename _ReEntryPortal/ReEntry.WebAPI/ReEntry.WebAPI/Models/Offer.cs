@@ -2,55 +2,55 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace NoCqrs.Domain
+namespace ReEntry.WebAPI.Models
 {
     public class Offer
     {
         public Guid Id { get; private set; }
         public string Number { get; private set; }
         public OfferStatus Status { get; private set; }
-        public Product Product { get; private set; }
-        public Person Customer { get; private set; }
-        public Car Car { get; private set; }
-        public Person Driver { get; private set; }
+        //public Product Product { get; private set; }
+        //public Person Customer { get; private set; }
+        //public Car Car { get; private set; }
+        //public Person Driver { get; private set; }
         public TimeSpan CoverPeriod { get; private set; }
 
         [Column(TypeName = "money")]
         public decimal TotalCost { get; private set; }
         public DateTime CreationDate { get; private set; }
         public DateTime ValidityDate => CreationDate.AddDays(30);
-        private List<CoverPrice> covers = new List<CoverPrice>();
-        public IEnumerable<CoverPrice> Covers => covers.AsReadOnly();
+        //private List<CoverPrice> covers = new List<CoverPrice>();
+        //public IEnumerable<CoverPrice> Covers => covers.AsReadOnly();
 
         public Offer
         (
-            Guid id, 
-            string number, 
-            Product product, 
-            Person customer, 
-            Person driver, 
-            Car car,
+            Guid id,
+            string number,
+            //Product product,
+            //Person customer,
+            //Person driver,
+            //Car car,
             TimeSpan coverPeriod,
             //Money totalCost, 
-            decimal totalCost, 
+            decimal totalCost,
             DateTime creationDate,
-            IDictionary<Cover, Decimal> coversPrices
+            IDictionary<Cover, decimal> coversPrices
         )
         {
             Id = id;
             Number = number;
             Status = OfferStatus.New;
-            Product = product;
-            Customer = customer;
-            Driver = driver;
-            Car = car;
+            //Product = product;
+            //Customer = customer;
+            //Driver = driver;
+            //Car = car;
             CoverPeriod = coverPeriod;
             TotalCost = totalCost;
             CreationDate = creationDate;
-            foreach (var coverWithPrice in coversPrices)
-            {
-                covers.Add(new CoverPrice(Guid.NewGuid(), coverWithPrice.Key, coverWithPrice.Value, coverPeriod));
-            }
+            //foreach (var coverWithPrice in coversPrices)
+            //{
+            //    covers.Add(new CoverPrice(Guid.NewGuid(), coverWithPrice.Key, coverWithPrice.Value, coverPeriod));
+            //}
         }
 
         //required by EF
@@ -113,7 +113,7 @@ namespace NoCqrs.Domain
             Price = price;
             CoverPeriod = coverPeriod;
         }
-        
+
         public CoverPrice(Cover cover, decimal price, TimeSpan coverPeriod)
         {
             Id = Guid.NewGuid();
@@ -125,6 +125,6 @@ namespace NoCqrs.Domain
         //required by EF
         protected CoverPrice()
         {
-        } 
+        }
     }
 }

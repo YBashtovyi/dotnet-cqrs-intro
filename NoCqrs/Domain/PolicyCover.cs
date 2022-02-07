@@ -1,5 +1,4 @@
 using System;
-using NodaMoney;
 
 namespace NoCqrs.Domain
 {
@@ -9,12 +8,12 @@ namespace NoCqrs.Domain
         public Cover Cover { get; private set; }
         public ValidityPeriod CoverPeriod { get; private set; }
         
-        public Money Price { get; private set; }
+        public decimal Price { get; private set; }
         public TimeSpan PricePeriod { get; private set; }
         
-        public Money Amount { get; private set; }
+        public decimal Amount { get; private set; }
 
-        public PolicyCover(Guid id, Cover cover, ValidityPeriod coverPeriod, Money price, TimeSpan pricePeriod)
+        public PolicyCover(Guid id, Cover cover, ValidityPeriod coverPeriod, decimal price, TimeSpan pricePeriod)
         {
             Id = id;
             Cover = cover;
@@ -36,7 +35,7 @@ namespace NoCqrs.Domain
             Amount = CalculateAmount();
         }
 
-        private Money CalculateAmount()
+        private decimal CalculateAmount()
         {
             return decimal.Divide(CoverPeriod.Days, PricePeriod.Days) * Price;
         }

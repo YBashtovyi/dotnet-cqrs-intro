@@ -14,7 +14,7 @@ namespace NoCqrs.Services
                 CoverTo = policyVersion.CoverPeriod.ValidTo,
                 Vehicle = AssembleVehicleDescription(policyVersion.Car),
                 PolicyHolder = AssemblePolicyHolderDescription(policyVersion.PolicyHolder),
-                TotalPremiumAmount = policyVersion.TotalPremium.Amount
+                TotalPremiumAmount = policyVersion.TotalPremium
             };
         }
 

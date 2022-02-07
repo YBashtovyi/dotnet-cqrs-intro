@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.AspNetCore.Authentication.Internal;
-using NodaMoney;
 
 namespace NoCqrs.Domain
 {
@@ -18,7 +16,7 @@ namespace NoCqrs.Domain
         public Person PolicyHolder { get; private set; }
         public Person Driver { get; private set; }
         public Car Car { get; private set; }
-        public Money TotalPremium { get; private set; }
+        public decimal TotalPremium { get; private set; }
         private List<PolicyCover> covers = new List<PolicyCover>();
         public IEnumerable<PolicyCover> Covers => covers.AsReadOnly();
 
@@ -32,7 +30,7 @@ namespace NoCqrs.Domain
             Person policyHolder,
             Person driver,
             Car car,
-            Money totalPremium,
+            decimal totalPremium,
             IEnumerable<CoverPrice> coverPrices
         )
         {
@@ -103,7 +101,7 @@ namespace NoCqrs.Domain
             TotalPremium = RecalculateTotal();
         }
 
-        private Money RecalculateTotal() => covers.Aggregate(Money.Euro(0M), (c, x) => c + x.Amount);
+        private decimal RecalculateTotal() => covers.Aggregate(0M, (c, x) => c + x.Amount);
 
         public bool IsEffectiveOn(DateTime effectiveDate) => VersionValidityPeriod.Contains(effectiveDate);
 

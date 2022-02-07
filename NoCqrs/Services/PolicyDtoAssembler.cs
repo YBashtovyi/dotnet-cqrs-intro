@@ -34,7 +34,7 @@ namespace NoCqrs.Services
                 CoverTo = version.CoverPeriod.ValidTo,
                 VersionFrom = version.VersionValidityPeriod.ValidFrom,
                 VersionTo = version.VersionValidityPeriod.ValidTo,
-                TotalPremium = version.TotalPremium.Amount,
+                TotalPremium = version.TotalPremium,
                 Covers = version.Covers.Select(CoverDtoAssembler.AssembleCoverDto).ToList(),
                 Changes = AssembleChanges(policy, version)
             };
@@ -60,7 +60,7 @@ namespace NoCqrs.Services
                 Code = policyCover.Cover.Code,
                 CoverFrom = policyCover.CoverPeriod.ValidFrom,
                 CoverTo = policyCover.CoverPeriod.ValidTo,
-                PremiumAmount = policyCover.Amount.Amount
+                PremiumAmount = policyCover.Amount
             };
         }
     }

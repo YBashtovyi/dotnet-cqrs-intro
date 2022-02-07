@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using NoCqrs.Domain;
-using NodaMoney;
-using NodaTime;
 
 namespace NoCqrs.Tests
 {
@@ -20,11 +18,16 @@ namespace NoCqrs.Tests
                 PersonsTestData.Kowalski(),
                 CarsTestData.OldFordFocus(),
                 TimeSpan.FromDays(365), 
-                Money.Euro(500),
+                //Money.Euro(500),
+                //decimal
+                500,
                 validityEnd.AddDays(-30),
-                new Dictionary<Cover, Money>()
+                new Dictionary<Cover, Decimal>()
                 {
-                    {product.Covers.WithCode("OC"), Money.Euro(500) }
+                    {product.Covers.WithCode("OC"), 
+                        //Money.Euro(500) 
+                        500
+                    }
                 }
             );
         }

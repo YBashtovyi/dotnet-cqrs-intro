@@ -1,0 +1,60 @@
+2022-02-07 21:48:09.614 +02:00 [INF] Now listening on: http://localhost:5180
+2022-02-07 21:48:09.671 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-07 21:48:09.672 +02:00 [INF] Hosting environment: Development
+2022-02-07 21:48:09.674 +02:00 [INF] Content root path: D:\sources\Architecture patterns\dotnet-cqrs-intro\_ReEntryPortal\ReEntry.WebAPI\ReEntry.WebAPI\
+2022-02-07 21:48:11.232 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 319.5416 ms
+2022-02-07 21:48:11.857 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 165.6349 ms
+2022-02-07 21:49:11.411 +02:00 [INF] Now listening on: http://localhost:5180
+2022-02-07 21:49:11.458 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-07 21:49:11.460 +02:00 [INF] Hosting environment: Development
+2022-02-07 21:49:11.462 +02:00 [INF] Content root path: D:\sources\Architecture patterns\dotnet-cqrs-intro\_ReEntryPortal\ReEntry.WebAPI\ReEntry.WebAPI\
+2022-02-07 21:49:13.108 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 268.3464 ms
+2022-02-07 21:49:13.684 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 188.4357 ms
+2022-02-07 21:50:20.882 +02:00 [INF] HTTP GET / responded 200 in 15043.5669 ms
+2022-02-07 21:51:04.935 +02:00 [INF] HTTP GET /Offers responded 200 in 2484.0097 ms
+2022-02-07 21:56:45.556 +02:00 [INF] Now listening on: http://localhost:5180
+2022-02-07 21:56:45.614 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-07 21:56:45.616 +02:00 [INF] Hosting environment: Development
+2022-02-07 21:56:45.617 +02:00 [INF] Content root path: D:\sources\Architecture patterns\dotnet-cqrs-intro\_ReEntryPortal\ReEntry.WebAPI\ReEntry.WebAPI\
+2022-02-07 21:56:47.317 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 275.0909 ms
+2022-02-07 21:56:48.150 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 435.5419 ms
+2022-02-07 21:57:29.149 +02:00 [INF] HTTP GET / responded 200 in 29443.5541 ms
+2022-02-07 22:04:09.383 +02:00 [INF] Now listening on: http://localhost:5180
+2022-02-07 22:04:09.431 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-07 22:04:09.433 +02:00 [INF] Hosting environment: Development
+2022-02-07 22:04:09.435 +02:00 [INF] Content root path: D:\sources\Architecture patterns\dotnet-cqrs-intro\_ReEntryPortal\ReEntry.WebAPI\ReEntry.WebAPI\
+2022-02-07 22:04:10.793 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 274.9497 ms
+2022-02-07 22:04:11.606 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 156.0281 ms
+2022-02-07 22:04:31.512 +02:00 [INF] Now listening on: http://localhost:5180
+2022-02-07 22:04:31.718 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-07 22:04:31.871 +02:00 [INF] Hosting environment: Development
+2022-02-07 22:04:31.874 +02:00 [INF] Content root path: D:\sources\Architecture patterns\dotnet-cqrs-intro\_ReEntryPortal\ReEntry.WebAPI\ReEntry.WebAPI\
+2022-02-07 22:04:33.479 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 231.3210 ms
+2022-02-07 22:04:34.360 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 138.0991 ms
+2022-02-07 22:04:49.912 +02:00 [INF] Now listening on: http://localhost:5180
+2022-02-07 22:04:49.984 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-07 22:04:49.987 +02:00 [INF] Hosting environment: Development
+2022-02-07 22:04:49.990 +02:00 [INF] Content root path: D:\sources\Architecture patterns\dotnet-cqrs-intro\_ReEntryPortal\ReEntry.WebAPI\ReEntry.WebAPI\
+2022-02-07 22:04:51.567 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 233.1532 ms
+2022-02-07 22:04:52.189 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 196.8177 ms
+2022-02-07 22:05:11.542 +02:00 [INF] HTTP GET / responded 200 in 7329.2572 ms
+2022-02-07 22:06:01.426 +02:00 [INF] Now listening on: http://localhost:5180
+2022-02-07 22:06:01.565 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-07 22:06:01.570 +02:00 [INF] Hosting environment: Development
+2022-02-07 22:06:01.572 +02:00 [INF] Content root path: D:\sources\Architecture patterns\dotnet-cqrs-intro\_ReEntryPortal\ReEntry.WebAPI\ReEntry.WebAPI\
+2022-02-07 22:06:03.237 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 231.0232 ms
+2022-02-07 22:06:03.781 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 173.3569 ms
+2022-02-07 22:06:12.257 +02:00 [INF] HTTP GET / responded 200 in 3050.3778 ms
+2022-02-07 22:07:35.550 +02:00 [INF] Now listening on: http://localhost:5180
+2022-02-07 22:07:35.609 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-07 22:07:35.613 +02:00 [INF] Hosting environment: Development
+2022-02-07 22:07:35.616 +02:00 [INF] Content root path: D:\sources\Architecture patterns\dotnet-cqrs-intro\_ReEntryPortal\ReEntry.WebAPI\ReEntry.WebAPI\
+2022-02-07 22:07:36.996 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 225.0963 ms
+2022-02-07 22:07:37.650 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 200.2152 ms
+2022-02-07 22:07:49.311 +02:00 [INF] HTTP GET / responded 200 in 1988.1604 ms
+2022-02-07 22:12:08.475 +02:00 [INF] Now listening on: http://localhost:5180
+2022-02-07 22:12:08.524 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-07 22:12:08.533 +02:00 [INF] Hosting environment: Development
+2022-02-07 22:12:08.534 +02:00 [INF] Content root path: D:\sources\Architecture patterns\dotnet-cqrs-intro\_ReEntryPortal\ReEntry.WebAPI\ReEntry.WebAPI\
+2022-02-07 22:12:09.841 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 276.9652 ms
+2022-02-07 22:12:10.404 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 174.5990 ms

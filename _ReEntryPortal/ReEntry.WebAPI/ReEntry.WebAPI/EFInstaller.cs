@@ -1,10 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using NoCqrs.DataAccess;
-using NoCqrs.Domain;
+using ReEntry.WebAPI.DataAccess;
+using ReEntry.WebAPI.Domain;
 
-namespace NoCqrs.Installers
+namespace ReEntry.WebAPI
 {
     public static class EFInstaller
     {
@@ -12,8 +10,10 @@ namespace NoCqrs.Installers
         {
             services.AddDbContext<InsuranceDbContext>(opts =>
             {
-                //opts.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=NoCqrsDB;Trusted_Connection=True;");
-                opts.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=NoCqrsDB;User Id=sa;Password=admin");
+                // получаем строку подключения из файла конфигурации
+                string connection = configuration.GetConnectionString("DefaultConnection");
+                //@"Server=(localdb)\mssqllocaldb;Database=NoCqrsDB;User Id=sa;Password=admin"
+                opts.UseSqlServer(connection);
             });
             services.AddScoped<IDataStore, EFDataStore>();
             return services;
