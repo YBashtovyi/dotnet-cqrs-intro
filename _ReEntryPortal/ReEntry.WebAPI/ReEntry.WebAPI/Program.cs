@@ -6,8 +6,8 @@ using Serilog;
 try
 {
     Log.Logger = new LoggerConfiguration()
-    .WriteTo.Console()
-    .CreateBootstrapLogger();
+        .WriteTo.Console()
+        .CreateBootstrapLogger();
 
     Log.Information("Starting up");
 
@@ -48,9 +48,11 @@ try
 
     app.UseDbInitializer();
     // получение данных
-    app.MapGet("/", (InsuranceDbContext db) => db.Users.ToList());
+    app.MapGet("/Users", (InsuranceDbContext db) => db.Users.ToList());
 
     app.MapGet("/Offers", (InsuranceDbContext db) => db.Offers.ToList());
+
+    app.MapGet("/Products", (InsuranceDbContext db) => db.Products.ToList());
 
     app.Run();
 
